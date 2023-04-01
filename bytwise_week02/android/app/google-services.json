@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "764935060509",
+    "project_id": "bytwisefirebase",
+    "storage_bucket": "bytwisefirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764935060509:android:df720065d5e5d202b41af4",
+        "android_client_info": {
+          "package_name": "com.bytwisefirebase.bytwise_week02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764935060509-ee7eaaa7pqbanaqgtoh82qq6gb7hsu39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFfKR-mAJuZDb6s7IVv26W0ya_Le9XNhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764935060509-ee7eaaa7pqbanaqgtoh82qq6gb7hsu39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
