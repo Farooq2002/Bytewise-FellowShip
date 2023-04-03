@@ -45,7 +45,7 @@ class _LoginWithPhoneNumState extends State<LoginWithPhoneNum> {
                     loading = true;
                   });
                   _auth.verifyPhoneNumber(
-                      phoneNumber: phoneNumberController.text,
+                      phoneNumber: phoneNumberController.text.trim(),
                       verificationCompleted: (_) {
                         setState(() {
                           loading = false;

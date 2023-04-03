@@ -3,6 +3,8 @@ import 'package:bytwise_week02/utils/utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import 'add_posts.dart';
+
 class PostsScreen extends StatefulWidget {
   const PostsScreen({Key? key}) : super(key: key);
 
@@ -38,6 +40,13 @@ class _PostsScreenState extends State<PostsScreen> {
       ),
       body: Column(
         children: [],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const AddPost()));
+        },
+        child: const Icon(Icons.add),
       ),
     );
   }
