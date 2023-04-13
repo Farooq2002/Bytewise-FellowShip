@@ -1,4 +1,4 @@
-import 'package:bytwise_week02/ui/splash_screen.dart';
+import 'package:bytwise_week02/ui/auth/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }

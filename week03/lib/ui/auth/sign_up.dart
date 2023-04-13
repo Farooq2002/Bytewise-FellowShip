@@ -12,7 +12,7 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  bool laoding = false;
+  bool loading = false;
   final _formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
@@ -24,12 +24,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
             password: passwordController.text.toString())
         .then((error) {
       setState(() {
-        laoding = false;
+        loading = false;
       });
       Utils().toastMessage(error.toString());
     }).onError((error, stackTrace) {
       setState(() {
-        laoding = false;
+        loading = false;
       });
       Utils().toastMessage(error.toString());
     });
@@ -94,11 +94,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
               height: 40,
             ),
             RoundButton(
-                loading: laoding,
+                loading: loading,
                 title: 'Sign Up',
                 onPress: () {
                   setState(() {
-                    laoding = true;
+                    loading = true;
                     //============================== function is created for login above ======================================
                     SignUp();
                   });

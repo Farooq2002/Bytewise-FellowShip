@@ -1,6 +1,7 @@
 import 'package:bytwise_week02/ui/auth/login_with_phone_num.dart';
 import 'package:bytwise_week02/ui/auth/posts/posts_screen.dart';
 import 'package:bytwise_week02/ui/auth/sign_up.dart';
+import 'package:bytwise_week02/ui/forgot_password.dart';
 import 'package:bytwise_week02/utils/utils.dart';
 import 'package:bytwise_week02/widgets/round_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -115,6 +116,19 @@ class _LoginScreenState extends State<LoginScreen> {
                       login();
                     }
                   }),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                const ForgotPasswordScreen()));
+                  },
+                  child: const Text('Forgot Password'),
+                ),
+              ),
               const SizedBox(
                 height: 20,
               ),

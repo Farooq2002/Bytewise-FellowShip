@@ -1,3 +1,4 @@
+import 'package:bytwise_week02/ui/auth/posts/posts_screen.dart';
 import 'package:bytwise_week02/utils/utils.dart';
 import 'package:bytwise_week02/widgets/round_button.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -14,6 +15,13 @@ class _AddPostState extends State<AddPost> {
   final databaseReference = FirebaseDatabase.instance.ref('names');
   final postController = TextEditingController();
   bool loading = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,17 +54,20 @@ class _AddPostState extends State<AddPost> {
                 onPress: () {
                   setState(() {
                     loading = true;
-                    // ===================
                   });
-                  databaseReference
-                      .child(DateTime.now().millisecondsSinceEpoch.toString())
-                      .set({
+
+                  String id = DateTime.now().millisecondsSinceEpoch.toString();
+                  databaseReference.child(id).set({
                     'title': postController.text.toString(),
-                    'id': DateTime.now().millisecondsSinceEpoch.toString()
+                    'id': id
                   }).then((value) {
                     setState(() {
                       loading = false;
                     });
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PostsScreen()));
                     Utils().toastMessage('post created!');
                   }).onError((error, stackTrace) {
                     setState(() {
