@@ -1,0 +1,23 @@
+                                                                                            
+
+
+
+  														WEEK 01 FLUTTER FELLOWSHIP (INTERMEDIATE)
+
+
+
+
+											1.learned deep details about stateless and stateful widget
+
+											2.Learned about why we should used state management,
+
+											3.Implementation of Provider.
+
+											4.Single Provider and Multi Providers.
+
+											5.Some Examples in prvider state management
+
+											6.Login API's through provider as well.
+                                      
+                                      7.Now i am working MVVM architecture
+

@@ -1,0 +1,25 @@
+                                                                                            
+
+
+
+  												WEEK 03 FLUTTER FELLOWSHIP (INTERMEDIATE)
+
+
+
+
+								1.learned About FIREBASE
+
+								2.Learned about HOW CAN WE CREATE PROJECT IN FIREBASE
+
+							     3.LEARNED HOW CAN WE CONNECT FIREBASE TO FLUTTER APP
+ 
+							     4.LEARNED HOW WE CAN SIGN UP USER WITH EMAIL AND PASSWORD
+
+								5.LEARNED HOW WE CAN SIGN IN USER WITH EMAIL AND PASSWORD
+
+								6.LEARNED PHONE NUMBER AUTHENTICATION
+                                      
+                                      7.LEARNED HOW REALTIME FIREBASE DATABASE WORKS
+
+ 								8.LEARNED HOW REALTIME FIREBASE FIRESTORES WORKS
+
