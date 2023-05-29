@@ -12,7 +12,6 @@ class AddFirestorePost extends StatefulWidget {
 }
 
 class _AddFirestorePostState extends State<AddFirestorePost> {
-  final fireStore = FirebaseFirestore.instance.collection('users');
   final postController = TextEditingController();
   bool loading = false;
 
@@ -22,6 +21,7 @@ class _AddFirestorePostState extends State<AddFirestorePost> {
     super.initState();
   }
 
+  final firestore = FirebaseFirestore.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +56,7 @@ class _AddFirestorePostState extends State<AddFirestorePost> {
                     loading = true;
                   });
                   String id = DateTime.now().millisecondsSinceEpoch.toString();
+                  final fireStore = FirebaseFirestore.instance;
                   fireStore.doc(id).set({
                     'title': postController.text.toString(),
                     'id': id
